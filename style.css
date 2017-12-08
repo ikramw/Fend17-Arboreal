@@ -1,0 +1,170 @@
+body{
+    font-family: 'Open Sans', sans-serif; 
+    max-width: 80%;
+    margin: 1em 8em;
+    line-height: 1.5;
+}
+section { 
+    padding: 2.5rem;  
+    margin-top:8rem;
+}
+#mission P{
+    line-height: 2rem;
+    
+    margin-left: 4rem;  
+   background-color:  #47454a;
+
+   opacity: 0.6;
+   color: white;
+    /* background-color:  black;*/
+   text-shadow: 2px 2px 4px #000000;
+   font-size: 1.2rem;
+   padding:1em;
+}
+#mission{
+background-image: url("images2.jpg");
+
+}
+.container{
+    display: flex;
+    border:1px solid  #481862;
+    
+}
+
+.container1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container1 p{
+    line-height: 2rem;
+    font-size: 1em;
+    padding: 2rem;
+}
+.container p{
+    line-height: 3rem;
+    padding: 2rem;
+}
+section h2{
+   /* color: rgba(235, 139, 6, 1); */
+   color:#cb6eb5;
+    text-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px  #316507;
+    font-size: 2em;
+}
+h3{
+    text-align: center;
+    text-shadow: 2px 2px 4px #cb6eb5;;
+    font-size: 1.6em;
+}
+p{
+    font-size: 1em;
+   /* font-weight: 700;*/
+   
+    line-height: 1.5rem;
+}
+@font-face{
+    font-family: 'custom';
+    src: url(Ribbons-and-banners.ttf)
+}
+.slogan{
+    font-family:  'custom';
+    color: #cb6eb5;
+    /*color: rgba(235, 139, 6, 1); */
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+  
+   /*background-color:#47454a;*/
+   background-color: black;
+  
+    color: #fff;     
+}
+nav{   
+    padding: 0 2rem;
+}
+ li,a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 1.2rem;
+    padding:0.2em;
+    }
+li a:hover {  
+    color: #cb6eb5;
+    /*color:rgba(235, 139, 6, 1); */
+ } 
+ li:hover {  
+   /* color:rgba(235, 139, 6, 1); ^*/
+   color:#cb6eb5;
+    cursor: pointer;
+ } 
+  
+ #themes{
+     width: 40%;
+     background-color: #481862;
+ }
+ 
+table {
+    border-collapse: collapse;
+    border-spacing: 1rem;
+    border: 1px solid gray;
+  }
+  
+  th {
+    text-align: left;
+    background-color: #481862;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 1.2rem;
+  }
+  
+  th, td{
+    border: 1px solid white;
+    padding: 1rem;
+   
+  }
+  
+  tr:nth-child(even){
+    background-color:lightgrey;
+  }
+  #contact{  
+    background-color:#5c5c5c;
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+  /* margin:auto;  
+   width:20em; */
+}  
+  #contact input[type='email'], input[type='text']{   
+    width: 20em;  
+    height: 2em;
+} 
+#contact textarea{
+    width: 20em;     
+    height: 15em;  
+} 
+  footer{
+   /* text-align: center;*/
+   margin-top: 4em;
+   justify-content: space-between;
+   align-items: center;
+   vertical-align: middle;
+   display: flex;
+  }
+  .themesVisibility{
+    display: none;
+  }
+  .visibility{
+    display: block;
+  }
+  #copy{
+     /* align-self:flex-end ;*/
+      color: grey;
+  }
+  iframe{
+    width:30em;
+     height:25em;
+  }
