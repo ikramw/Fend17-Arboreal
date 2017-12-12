@@ -26,3 +26,4 @@ function ShowExotique(){
     aloha.className="displayNone";
     siberia.className="displayNone";
 }
+window.addEventListener("hashchange", function() { scrollBy(0, -180) });

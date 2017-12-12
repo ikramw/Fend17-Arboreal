@@ -8,10 +8,50 @@ body{
     display: flex;
     flex-direction: column;
 }
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    flex: 0 0 auto;
+    background-color: black;
+    color: #fff; 
+    position:fixed;
+    top:0;   
+    left:0;
+    right:0;
+    z-index: 10;
+}
+nav{   
+    padding: 0 2rem;
+}
+ li,a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 1.2rem;
+    padding:0.2em;
+}
+li a:hover {  
+    color: #cb6eb5;
+}
+@font-face{
+    font-family: 'custom';
+    src: url(Ribbons-and-banners.ttf)
+}
+.slogan{
+    font-family:  'custom';
+    color: #cb6eb5;
+}
+.content{
+    flex:1;
+} 
 section { 
     flex: 1;
     padding: 2.5rem;  
     margin-top:8rem;
+   /* position: relative;*/
 }
 #mission P{
     line-height: 2rem;
@@ -35,11 +75,6 @@ section {
     justify-content: space-around;
     align-items: center;
 }
-.containerContact p{
-    line-height: 2rem;
-    font-size: 1em;
-    padding: 2rem;
-}
 .containerThemes p{
     line-height: 3rem;
     padding: 2rem;
@@ -54,48 +89,11 @@ h3{
     text-shadow: 2px 2px 4px #cb6eb5;;
     font-size: 1.6em;
 }
-p{
-    font-size: 1em;   
-    line-height: 1.5rem;
-}
-@font-face{
-    font-family: 'custom';
-    src: url(Ribbons-and-banners.ttf)
-}
-.slogan{
-    font-family:  'custom';
-    color: #cb6eb5;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    vertical-align: middle;
-    flex: 0 0 auto;
-    z-index:0 ;
-    background-color: black;
-    color: #fff;     
-}
-nav{   
-    padding: 0 2rem;
-}
- li,a{
-    text-decoration: none;
-    display: inline-block;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    font-size: 1.2rem;
-    padding:0.2em;
-}
-li a:hover {  
-    color: #cb6eb5;
-} 
- li:hover {  
+li:hover {  
     color:#cb6eb5; 
     cursor: pointer;
-} 
-  
- #themes ul{
+}   
+#themes ul{
     width: 40%;
     background-color: #481862;
 } 
@@ -132,7 +130,11 @@ tr:nth-child(even){
     width: 20em;     
     height: 15em;  
 } 
-  footer{
+iframe{
+    width:30em;
+    height:25em;
+} 
+footer{
    flex:1;
    margin-top: 4em;
    justify-content: space-between;
@@ -140,19 +142,14 @@ tr:nth-child(even){
    vertical-align: middle;
    display: flex;
 }
+.copy{
+    color: grey;
+}
 .displayNone{
    display: none;
 }
 .displayBlock{
    display: block;
 }
-#copy{
-    color: grey;
-}
-iframe{
-    width:30em;
-    height:25em;
-} 
-.content{
-    flex:1;
-} 
+
+
