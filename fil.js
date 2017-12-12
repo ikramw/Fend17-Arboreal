@@ -9,20 +9,20 @@ exotiqueLi.addEventListener("click",ShowExotique);
 
 function Show(){
     var aloha = document.getElementById("aloha");
-    aloha.className="visibility";
-    siberia.className="themesVisibility";
-    exotique.className="themesVisibility";
+    aloha.className="displayBlock";
+    siberia.className="displayNone";
+    exotique.className="displayNone";
 
 }
 function ShowSiberia(){
     var siberia = document.getElementById("siberia");
-    siberia.className="visibility";
-    aloha.className="themesVisibility";
-    exotique.className="themesVisibility";
+    siberia.className="displayBlock";
+    aloha.className="displayNone";
+    exotique.className="displayNone";
 }
 function ShowExotique(){
     var exotique = document.getElementById("exotique");
-    exotique.className="visibility";
-    aloha.className="themesVisibility";
-    siberia.className="themesVisibility";
+    exotique.className="displayBlock";
+    aloha.className="displayNone";
+    siberia.className="displayNone";
 }
