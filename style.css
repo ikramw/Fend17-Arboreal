@@ -25,7 +25,7 @@ header{
 nav{   
     padding: 0 2rem;
 }
- li,a{
+nav ul li,a{
     text-decoration: none;
     display: inline-block;
     color: white;
@@ -35,6 +35,14 @@ nav{
 }
 li a:hover {  
     color: #cb6eb5;
+}
+#themes ul li{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 1.2rem;
+    padding:0.2em;
 }
 @font-face{
     font-family: 'custom';
@@ -86,10 +94,10 @@ section h2{
 }
 h3{
     text-align: center;
-    text-shadow: 2px 2px 4px #cb6eb5;;
+    text-shadow: 2px 2px 4px #cb6eb5;
     font-size: 1.6em;
 }
-li:hover {  
+#themes ul li:hover {  
     color:#cb6eb5; 
     cursor: pointer;
 }   
@@ -97,10 +105,40 @@ li:hover {
     width: 40%;
     background-color: #481862;
 } 
+.containerPricing{
+    display: flex;
+   
+}
+.pricingChild{
+    border:1px solid  #481862; 
+    margin:2em;
+    flex:1;
+    background-color:hsl(314, 63%, 95%);
+    overflow: hidden;
+   }
+.pricingChild h3{
+    background-color: #481862;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 1.2rem;
+}
+.pricingChild strong{
+    font-size: 1.6rem;
+    padding: 3.5em;
+}
+.pricingChild button{
+    background-color: #cb6eb5;
+    color: white;
+    margin: 0.5em;
+}
 table{
     border-collapse: collapse;
     border-spacing: 1rem;
     border: 1px solid gray;
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0;
 }  
 th{
     text-align: left;
@@ -115,7 +153,7 @@ th, td{
 }
   
 tr:nth-child(even){
-    background-color:lightgrey;
+    background-color:hsl(314, 63%, 95%);
 }
 #contact{  
     background-color:#5c5c5c;
