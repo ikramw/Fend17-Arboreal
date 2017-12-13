@@ -51,7 +51,7 @@ section {
     flex: 1;
     padding: 2.5rem;  
     margin-top:8rem;
-   /* position: relative;*/
+    /* position: relative;*/
 }
 #mission P{
     line-height: 2rem;
@@ -151,5 +151,7 @@ footer{
 .displayBlock{
    display: block;
 }
+
+
 
 
