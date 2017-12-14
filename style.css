@@ -1,12 +1,9 @@
 body{
     font-family: 'Open Sans', sans-serif; 
-    max-width: 80%;
     margin: 1em 8em;
     line-height: 1.5;
     height: 100%;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
+    min-height: 100%;   
 }
 header{
     display: flex;
@@ -52,14 +49,20 @@ li a:hover {
     font-family:  'custom';
     color: #cb6eb5;
 }
-.content{
-    flex:1;
-} 
-section { 
-    flex: 1;
+ 
+section {    
     padding: 2.5rem;  
     margin-top:8rem;
-    /* position: relative;*/
+}
+section h2{
+    color:#cb6eb5;
+    text-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px  #316507;
+    font-size: 2em;
+}
+h3{
+    text-align: center;
+    text-shadow: 2px 2px 4px #cb6eb5;
+    font-size: 1.6em;
 }
 #mission P{
     line-height: 2rem;
@@ -74,47 +77,18 @@ section {
 #mission{
     background-image: url("images2.jpg");
 }
-.containerThemes{
-    display: flex;
-    border:1px solid  #481862;    
-}
-.containerContact{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.containerThemes p{
-    line-height: 3rem;
-    padding: 2rem;
-}
-section h2{
-    color:#cb6eb5;
-    text-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px  #316507;
-    font-size: 2em;
-}
-h3{
-    text-align: center;
-    text-shadow: 2px 2px 4px #cb6eb5;
-    font-size: 1.6em;
-}
-#themes ul li:hover {  
-    color:#cb6eb5; 
-    cursor: pointer;
-}   
-#themes ul{
-    width: 40%;
-    background-color: #481862;
-} 
 .containerPricing{
     display: flex;
-   
+    flex-wrap: wrap;
 }
 .pricingChild{
     border:1px solid  #481862; 
     margin:2em;
     flex:1;
+    height: 12em;
+    min-width: 12em;
     background-color:hsl(314, 63%, 95%);
-    overflow: hidden;
+    
    }
 .pricingChild h3{
     background-color: #481862;
@@ -155,6 +129,38 @@ th, td{
 tr:nth-child(even){
     background-color:hsl(314, 63%, 95%);
 }
+#themes ul li:hover {  
+    color:#cb6eb5; 
+    cursor: pointer;
+}   
+#themes ul{
+    width:25em;
+    background-color: #481862;
+} 
+.containerThemes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    border:1px solid  #481862;  
+    min-width: 16em;
+    justify-content: space-between;
+}
+.containerThemes img{
+   
+    width:16em ;
+    max-height: 16em;
+    
+}
+.containerThemes p{
+    max-width:30em ;
+    line-height: 2rem;
+    padding: 2rem;
+}
+.containerContact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 #contact{  
     background-color:#5c5c5c;
     text-shadow: 2px 2px 4px #000000;
@@ -190,6 +196,86 @@ footer{
    display: block;
 }
 
+@media screen and (max-width:960px){
+    #mission P{
+        line-height: 2rem;
+        margin: 0;  
+        background-color:initial;
+        color:initial;
+        text-shadow:initial;
+        font-size: 1.2rem;
+        padding:0;
+        width:22em ;
+    }
+    #mission {
+        background-image: initial;
+    }
+}
 
+@media screen and (max-width:1137px) and (min-width:800px){
+    .containerThemes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .containerThemes p{
+        max-width:30em;
+        max-height: 16em;
+        line-height: 2rem;
+        padding: 0;
+    }    
+}
 
-
+ @media screen and (max-width:799px) and (min-width:596px){
+    .containerThemes img{        
+        width: 100%;        
+        max-height: 16em;         
+    }
+     .containerThemes{          
+        min-width: 20em;         
+    }
+}
+@media screen and (max-width:1093px) and (min-width:990px){
+    .containerContact iframe{           
+         max-width: 25em;
+         max-height: 20em;         
+     }
+     #contact input[type='email'], input[type='text']{   
+        max-width: 18em;        
+    } 
+    #contact textarea{
+        max-width: 18em;        
+    } 
+}
+@media screen and (max-width:989px) and (min-width:693px){
+    .containerContact{
+        display: flex;
+        flex-wrap: wrap;
+        width: 27em;
+        justify-content: flex-start;
+    }
+    .containerContact iframe{        
+         width: 90%;
+         max-height: 20em;         
+     }
+     #contact input[type='email'], input[type='text']{   
+        max-width: 18em;         
+    } 
+    #contact textarea{
+        max-width: 18em;  
+    } 
+}
+@media screen and (max-width:692px){
+    .containerContact{
+        display: flex;
+        flex-wrap: wrap;
+        width: 27em;
+        justify-content: flex-start;
+    }
+    #contact{
+        background-color: initial;
+        text-shadow: initial;
+        color: initial;
+    }
+    
+}
