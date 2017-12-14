@@ -26,3 +26,10 @@ function ShowExotique(){
     aloha.className="displayNone";
     siberia.className="displayNone";
 }
+var resposive_menu=document.getElementById("resposive_menu");
+var icon=document.getElementById("icon");
+icon.addEventListener("click",show_menu);
+
+function show_menu(){
+    resposive_menu.className="resposive_menu";
+}

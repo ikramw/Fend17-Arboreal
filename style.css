@@ -19,6 +19,19 @@ header{
     right:0;
     z-index: 10;
 }
+.resposive_menu{
+    background-color: black;
+    position:absolute;
+    right: 1em;
+    width: 15em;
+    display:block;
+}
+.menu{
+    display: none;
+}
+.icon{
+    display: none;
+}
 nav{   
     padding: 0 2rem;
 }
@@ -179,11 +192,9 @@ iframe{
     height:25em;
 } 
 footer{
-   flex:1;
    margin-top: 4em;
    justify-content: space-between;
    align-items: center;
-   vertical-align: middle;
    display: flex;
 }
 .copy{
@@ -221,7 +232,7 @@ footer{
     .containerThemes p{
         max-width:30em;
         max-height: 16em;
-        line-height: 2rem;
+        line-height: 1.5rem;
         padding: 0;
     }    
 }
@@ -271,11 +282,47 @@ footer{
         flex-wrap: wrap;
         width: 27em;
         justify-content: flex-start;
+        align-content: flex-start;
     }
     #contact{
         background-color: initial;
         text-shadow: initial;
         color: initial;
     }
-    
+    body{
+        margin:0;
+    }
+}
+@media screen and (max-width:460px) and (min-width:375px){
+    footer{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:374px){
+    footer{
+        flex-wrap: wrap;
+    }
+    footer .copy {
+        display: none;
+    }
+}
+@media screen and (max-width:960px) and (min-width:555px){
+    .icon{
+        display:block;
+    }
+    nav{
+        display:none;
+    }
+}
+@media screen and (max-width:554px){
+   
+    .slogan{
+        font-size: 1.3em;
+    }
+    .icon{
+        display:block;
+    }
+    nav{
+        display:none;
+    }
 }
