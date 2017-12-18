@@ -32,4 +32,14 @@ icon.addEventListener("click",show_menu);
 
 function show_menu(){
     resposive_menu.className="resposive_menu";
+    icon.className="displayNone";
+    kryss.className="displayBlock";
+}
+var kryss=document.getElementById("kryss");
+kryss.addEventListener("click",hide_menu);
+
+function hide_menu(){
+    resposive_menu.className="displayNone";
+    icon.className="displayBlock";
+    kryss.className="displayNone";
 }
