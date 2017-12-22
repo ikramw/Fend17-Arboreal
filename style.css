@@ -218,7 +218,7 @@ footer{
 .displayBlock{
    display: block;
 }
-@media screen and (max-width:960px){
+@media screen and (max-width:961px){
     .mission P{
         line-height: 2rem;
         margin: 0;  
@@ -231,6 +231,17 @@ footer{
     }
     .mission {
         background-image: none;
+    }
+    .icon{
+        display:block;
+    }
+    nav{
+        display:none;
+    }
+}
+@media screen and (max-width:989px){
+    .slogan{
+        font-size: 1.3em;
     }
 }
 @media screen and (max-width:1137px) and (min-width:800px){
@@ -315,20 +326,6 @@ footer{
         display: none;
     }
 }
-@media screen and (max-width:961px){
-    .icon{
-        display:block;
-    }
-    nav{
-        display:none;
-    }
-}
-@media screen and (max-width:569px){
-   
-    .slogan{
-        font-size: 1.3em;
-    }
-}
 @media screen and (min-width:962px){
    #icon {
         display:none;
@@ -345,6 +342,5 @@ footer{
     h2.slogan{
         margin-top:10em;
         display: block;
-    }
-     
+    }     
  }
