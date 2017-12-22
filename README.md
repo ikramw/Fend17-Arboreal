@@ -22,10 +22,11 @@
  jag valt de brytpunkter efter att har inspekterat sidan och upptäckte att texten och bilder hamnar på varandra.
 till exemple vid max-width:961px har valt att ta bort background bilden i section "mission" och att skapa en humberger meny och dölja "nav".
 
-    Hemsidan har olika brytpunkter vilket gör att det ser ut annorlunda i olika storlek.
+   Hemsidan har olika brytpunkter vilket gör att det ser ut annorlunda i olika storlek.
 
     Har testat på Safari, Chrome, Firefox, Microsoft Edge, Opra samt Internet Explorer 11.
+    
 
     Sidan fungerar också på äldre browsers.
 
-    Jag har skapat en specifik css fil som hanterar bara IE 9 och äldre versioner och även har lagt till html5shiv.min.js.
+   Jag har skapat en specifik css fil som hanterar bara IE 9 och äldre versioner och även har lagt till html5shiv.min.js.
