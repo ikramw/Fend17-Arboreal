@@ -30,3 +30,6 @@ till exemple vid max-width:961px har valt att ta bort background bilden i sectio
     Sidan fungerar också på äldre browsers.
 
    Jag har skapat en specifik css fil som hanterar bara IE 9 och äldre versioner och även har lagt till html5shiv.min.js.
+   
+   
+   published at https://ikramw.github.io/Fend17-Arboreal/
