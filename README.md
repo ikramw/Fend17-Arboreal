@@ -17,14 +17,15 @@
 
  fixat menyn som följer med när man scrolla upp varje en ny sektion
 
-Hemsidan är responsiv med hjälp av media queries.
+    Hemsidan är responsiv med hjälp av media queries.
 
  jag valt de brytpunkter efter att har inspekterat sidan och upptäckte att texten och bilder hamnar på varandra.
 till exemple vid max-width:961px har valt att ta bort background bilden i section "mission" och att skapa en humberger meny och dölja "nav".
-hemsidan har olika brytpunkter vilket gör att det ser ut annorlunda i olika storlek.
 
-har testat på Safari, Chrome, Firefox, Microsoft Edge, Opra samt Internet Explorer 11.
+    Hemsidan har olika brytpunkter vilket gör att det ser ut annorlunda i olika storlek.
 
-Sidan fungerar också på äldre browsers.
+    Har testat på Safari, Chrome, Firefox, Microsoft Edge, Opra samt Internet Explorer 11.
 
- Jag har skapat en specifik css fil som hanterar bara IE 9 och äldre versioner och även har lagt till html5shiv.min.js.
+    Sidan fungerar också på äldre browsers.
+
+    Jag har skapat en specifik css fil som hanterar bara IE 9 och äldre versioner och även har lagt till html5shiv.min.js.
