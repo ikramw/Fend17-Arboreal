@@ -1,0 +1,271 @@
+body{
+    font-family: 'Open Sans', sans-serif; 
+    margin: 1em 8em;
+    line-height: 1.5;
+    height: 100vh;
+}
+* {
+    box-sizing: border-box;
+}
+.header{
+    align-items: center;
+    vertical-align: middle;
+    background-color: black;
+    color: #fff; 
+    top:0;   
+    left:0;
+    right:0;
+    z-index:-1 ;
+    height:6em ;
+}
+.logo{
+    float: left;
+}
+.slogan{
+    float: left;
+    color: #cb6eb5;
+    font-size: 1em;
+}
+h2.slogan{
+    display:none;
+}
+.menu{
+    display: none;
+}
+.icon{
+    display: none;
+}
+.kryss{
+    display: none;
+}
+nav{ 
+    float: right;
+    padding: 0 2rem;
+    background-color: black;
+}
+nav ul li,a{
+    float: left;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 1.2rem;
+    padding:0.2em;
+}
+li a:hover {  
+    color: #cb6eb5;
+}
+.clearfix{
+    clear: both;
+}
+section {    
+    padding: 2.5rem;  
+    margin-top:8em;
+}
+section h2{
+    color:#cb6eb5;
+    font-size: 2em;
+}
+h3{
+    text-align: center;
+    font-size: 1.6em;
+}
+.mission{
+    background-image: url("images2.jpg");
+    margin-top: 8em;
+}
+.mission P{
+    line-height: 2rem;
+    margin-left: 4rem;  
+    background-color:  #47454a;
+    opacity: 0.6;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 1.2rem;
+    padding:1em;
+}
+.pricingChild{
+    float: left;
+    border:1px solid  #481862;
+    margin:2em;
+    height: 12em;
+    width: 12em;
+    background-color:#f8dcf2;
+}
+ .pricingChild h3{
+    background-color: #481862;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 1.2rem;
+}
+.pricingChild strong{
+    font-size: 1.6rem;
+    padding: 3.5em;
+}
+.pricingChild button{
+    background-color: #cb6eb5;
+    color: white;
+    margin: 0.5em;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 1rem;
+    border: 1px solid gray;
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0;
+}  
+th{
+    text-align: left;
+    background-color: #481862;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 1.2rem;
+}  
+th, td{
+    border: 1px solid white;
+    padding: 1rem;   
+}  
+tr.color{
+    background-color:#f8dcf2;
+}
+.themes ul{
+    display:none;
+}
+.containerThemes img{
+    float: left;
+    width:16em ;
+    height: 13em;
+    margin-left: 6em;
+}
+.containerThemes p{
+    float: left;
+    max-width: 30em;
+    line-height: 2rem;
+    padding: 1rem;
+}
+.contact{  
+    background-color:#5c5c5c;
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+}  
+.contact input[type='email'], input[type='text']{   
+    width: 20em;  
+    height: 2em;
+} 
+.contact textarea{
+    width: 20em;     
+    height: 15em;  
+} 
+iframe{
+    width:30em;
+    height:25em;
+} 
+footer{
+   margin-top: 4em;
+}
+footer address{
+    float: left;
+}
+.copy{
+
+    color: grey;
+}
+.displayNone{
+   display: none;
+}
+.displayBlock{
+   display: block;
+}
+.clearfix{
+    clear: both;
+}
+@media screen and (max-width:960px){
+    .mission P{
+        line-height: 2rem;
+        margin: 0;  
+        background-color:#fff;
+        color:rgb(24, 23, 23);;
+        text-shadow:initial;
+        font-size: 1.2rem;
+        padding:0;
+        width:22em ;
+    }
+    .mission {
+        background-image: none;
+    }
+    nav{
+        padding: 0;
+    }
+    .header{
+        height: 7em;
+    }
+}
+@media screen and (max-width:989px){
+    .containerContact{
+        width: 27em;
+        }
+    .containerContact iframe{        
+         width: 90%;
+         max-height: 20em;         
+     }
+     #contact input[type='email'], input[type='text']{   
+        max-width: 18em;         
+    } 
+    #contact textarea{
+        max-width: 18em;  
+    } 
+}
+@media screen and (max-width:702px){
+    .containerContact{
+        width: 27em;
+    }
+    .contact{
+        background-color: #fff;
+        text-shadow: none;
+        color: black;
+    }
+    body{
+        margin:1em 2em;
+    }
+}
+@media screen and (max-width:327px){
+    footer{
+        margin-left: 3em;
+    }
+}
+@media screen and (max-width:374px){
+    footer{
+        margin: 2em 4em;
+    }
+    footer .copy {
+        display: none;
+    }
+}
+@media screen and (max-width:569px){
+   
+    h1.slogan{
+        display: none;
+    }
+    h2.slogan{
+        display: block;
+    }
+    nav{
+        float: left;
+    }
+    nav ul li,a{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:489px){
+    
+     nav{
+         width:100%;
+         float: left;
+    }
+     nav ul li,a{
+         font-size: 1rem;
+     }
+ }
+
