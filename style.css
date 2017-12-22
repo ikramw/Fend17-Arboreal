@@ -3,7 +3,7 @@ body{
     margin: 1em 8em;
     line-height: 1.5;
     height: 100%;
-    min-height: 100%;   
+    min-height: 100%; 
 }
 header{
     display: flex;
@@ -25,7 +25,12 @@ header{
     left:0;
     right:0;
     width: 60em;
+    height: 12em;
     display:block;
+}
+.resposive_menu ul{
+    display: flex;
+    flex-direction: column;
 }
 .menu{
     display: none;
@@ -36,7 +41,7 @@ header{
 .kryss{
     display: none;
 }
-nav{   
+nav{ 
     padding: 0 2rem;
 }
 nav ul li,a{
@@ -50,27 +55,23 @@ nav ul li,a{
 li a:hover {  
     color: #cb6eb5;
 }
-#themes ul li{
-    text-decoration: none;
-    display: inline-block;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    font-size: 1.2rem;
-    padding:0.2em;
-}
 @font-face{
     font-family: 'custom';
-    src: url(Ribbons-and-banners.ttf)
+    src: url(Ribbons-and-banners.ttf);
 }
-.slogan{
+h1.slogan{
+    float: left;
     font-family:  'custom';
     color: #cb6eb5;
-} 
+}
+h2.slogan{
+    display:none;
+}
 section {    
     padding: 2.5rem;  
     margin-top:8rem;
 }
-section h2{
+h2{
     color:#cb6eb5;
     text-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px  #316507;
     font-size: 2em;
@@ -80,7 +81,7 @@ h3{
     text-shadow: 2px 2px 4px #cb6eb5;
     font-size: 1.6em;
 }
-#mission P{
+.mission P{
     line-height: 2rem;
     margin-left: 4rem;  
     background-color:  #47454a;
@@ -90,7 +91,7 @@ h3{
     font-size: 1.2rem;
     padding:1em;
 }
-#mission{
+.mission{
     background-image: url("images2.jpg");
 }
 .containerPricing{
@@ -98,6 +99,7 @@ h3{
     flex-wrap: wrap;
 }
 .pricingChild{
+    float: left;
     border:1px solid  #481862;
     margin:2em;
     flex:1;
@@ -144,11 +146,19 @@ th, td{
 tr:nth-child(even){
     background-color:hsl(314, 63%, 95%);
 }
-#themes ul li:hover {  
+.themes ul li{  
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 1.2rem;
+    padding:0.2em;
+}
+.themes ul li:hover {  
     color:#cb6eb5; 
     cursor: pointer;
 }   
-#themes ul{
+.themes ul{
     width:25em;
     background-color: #481862;
 } 
@@ -156,17 +166,17 @@ tr:nth-child(even){
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    border:1px solid  #481862;  
+    border:1px 1px 1px 1px solid  #481862;  
     min-width: 16em;
     justify-content: space-between;
 }
 .containerThemes img{
-   
+   float: left;
     width:16em ;
-    max-height: 16em;
-    
+   height: 13em;
 }
 .containerThemes p{
+    float: left;
     max-width:30em ;
     line-height: 2rem;
     padding: 2rem;
@@ -176,16 +186,16 @@ tr:nth-child(even){
     justify-content: space-around;
     align-items: center;
 }
-#contact{  
+.contact{  
     background-color:#5c5c5c;
     text-shadow: 2px 2px 4px #000000;
     color: white;
 }  
-#contact input[type='email'], input[type='text']{   
+.contact input[type='email'], input[type='text']{   
     width: 20em;  
     height: 2em;
 } 
-#contact textarea{
+.contact textarea{
     width: 20em;     
     height: 15em;  
 } 
@@ -208,23 +218,21 @@ footer{
 .displayBlock{
    display: block;
 }
-
 @media screen and (max-width:960px){
-    #mission P{
+    .mission P{
         line-height: 2rem;
         margin: 0;  
-        background-color:initial;
-        color:initial;
-        text-shadow:initial;
+        background-color:#fff;
+        color:rgb(24, 23, 23);
+        text-shadow: none;
         font-size: 1.2rem;
         padding:0;
         width:22em ;
     }
-    #mission {
-        background-image: initial;
+    .mission {
+        background-image: none;
     }
 }
-
 @media screen and (max-width:1137px) and (min-width:800px){
     .containerThemes{
         display: flex;
@@ -238,29 +246,28 @@ footer{
         padding: 0;
     }    
 }
-
  @media screen and (max-width:799px) and (min-width:337px){
     .containerThemes img{        
-        width: 100%;        
+        margin-left:2em;        
         max-height: 16em;         
     }
      .containerThemes{          
         min-width: 20em;         
     }
 }
-@media screen and (max-width:1093px) and (min-width:990px){
+@media screen and (max-width:1093px) and (min-width:1004px){
     .containerContact iframe{           
          max-width: 25em;
          max-height: 20em;         
      }
-     #contact input[type='email'], input[type='text']{   
+    .contact input[type='email'], input[type='text']{   
         max-width: 18em;        
     } 
-    #contact textarea{
+    .contact textarea{
         max-width: 18em;        
     } 
 }
-@media screen and (max-width:989px) and (min-width:693px){
+@media screen and (max-width:1003px) and (min-width:710px){
     .containerContact{
         display: flex;
         flex-wrap: wrap;
@@ -271,25 +278,23 @@ footer{
          width: 90%;
          max-height: 20em;         
      }
-     #contact input[type='email'], input[type='text']{   
+    .contact input[type='email'], input[type='text']{   
         max-width: 18em;         
     } 
-    #contact textarea{
+    .contact textarea{
         max-width: 18em;  
     } 
 }
-@media screen and (max-width:692px){
+@media screen and (max-width:709px){
     .containerContact{
         display: flex;
         flex-wrap: wrap;
         width: 27em;
-       /* justify-content: flex-start;
-        align-content: flex-start;*/
     }
-    #contact{
-        background-color: initial;
-        text-shadow: initial;
-        color: initial;
+    .contact{
+        background-color: #ffffff;
+        text-shadow: none;
+        color: black;
     }
     body{
         margin:1em 2em;
@@ -306,7 +311,7 @@ footer{
         justify-content: space-around;
         margin: 2em 4em;
     }
-    footer .copy {
+    .copy {
         display: none;
     }
 }
@@ -323,12 +328,6 @@ footer{
     .slogan{
         font-size: 1.3em;
     }
-    .icon{
-        display:block;
-    }
-    nav{
-        display:none;
-    }
 }
 @media screen and (min-width:962px){
    #icon {
@@ -338,3 +337,14 @@ footer{
         display:none;
     }
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    h1.slogan{            
+         display:none;
+        }
+    h2.slogan{
+        margin-top:10em;
+        display: block;
+    }
+     
+ }
